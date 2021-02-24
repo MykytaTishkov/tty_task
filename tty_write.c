@@ -11,12 +11,11 @@ int main (int argc, char **argv)
     
     FILE* tty = fopen(tty_addr, "w");
     
-    //printf("%s\n", tty_addr);
+    
     for (int i = 2; i < argc; i++)
     {
         fprintf(tty, "%s", argv[i]);
     }
-    //fprintf(tty, "\n");
-    //free(tty_addr);
+    
     fclose(tty);
 }
